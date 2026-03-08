@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS SYSTEM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+
+
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>CRUDS</h2>
+            <p>Manage your data with ease</p>
+        </div>
+
+
+
+
+
+
+
+        <div class="inputs">
+            <input placeholder="Title" type="text" id="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" placeholder="Price" id="price">
+                <input onkeyup="getTotal()" type="number" placeholder="Taxes" id="taxes">
+                <input onkeyup="getTotal()" type="number" placeholder="Ads" id="ads">
+                <input onkeyup="getTotal()" type="number" placeholder="Discount" id="discount">
+                <small id="total"></small>
+            </div>
+            <input placeholder="Count" type="number" id="count">
+            <input placeholder="Category" type="text" id="category">
+            <button id="submit">Create</button>
+        </div>
+
+
+
+
+
+
+        <div class="outputs">
+
+            <div class="searchBlock">
+
+                <input onkeyup="searchData(this.value)" type="text" placeholder="Search" id="search">
+                <div class="c">
+                    <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+                </div>
+            </div>
+
+
+
+            <div id="deleteaAll"></div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>id</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th> 
+                        <th>Delete</th>
+                    </tr>
+
+
+                    
+                
+                   <!--- <tr>
+                        <td>1</td>
+                        <td>iPhone 12</td>
+                        <td>999</td>
+                        <td>50</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td>1069</td>
+                        <td>Smartphones</td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="delete">Delete</button></td>
+                        
+                    </tr> -->
+
+                </thead>
+
+                <tbody id="tbody">
+
+                    </tbody>
+
+            </table>
+
+        </div>
+
+
+    </div>
+    
+<div class="watermark">Bassam Elsopky</div>
+  
+
+
+<script src="main.js"></script>
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
