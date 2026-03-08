@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
+
 body {
-    /* اللون الأغمق من الباليتة للخلفية */
+   
     background: #2A2438; 
-    /* أفتح لون للنصوص */
     color: #DBD8E3; 
     font-family: 'Poppins', sans-serif;
 }
+
+
 
 .crud {
     width: 80%;
@@ -21,15 +23,17 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin: 20px 0;
+    
 }
 
-/* تنسيق المدخلات */
+
+
 input {
     width: 100%;
     height: 35px;
     outline: none;
     border: 1px solid #5C5470;
-    /* اللون الثاني في الباليتة لخلفية الحقول */
+    
     background: #352F44; 
     margin: 4px 0;
     border-radius: 8px;
@@ -38,11 +42,15 @@ input {
     transition: 0.3s;
 }
 
+
+
 input:focus {
     background: #352F44;
     border-color: #DBD8E3;
     transform: scale(1.02);
 }
+
+
 
 .price {
     display: flex;  
@@ -50,11 +58,14 @@ input:focus {
     margin: 10px 0;
 }
 
+
+
 .price input {
     width: 20%; 
 }
 
-/* زر التوتال - درجة أخضر تتناسب مع الألوان الداكنة */
+
+
 #total {
     background: #4E6C50; 
     padding: 5px 20px;
@@ -62,17 +73,19 @@ input:focus {
     color: #ffffff;
 }
 
+
+
 #total::before {
     content: "Total: ";
 }
 
-/* الأزرار العامة */
+
+
 button {
     width: 100%;
     height: 35px;
     border: none;
     cursor: pointer;
-    /* اللون المتوسط في الباليتة للأزرار */
     background: #5C5470; 
     color: #DBD8E3;
     border-radius: 20px;
@@ -85,7 +98,6 @@ button:hover {
     letter-spacing: 1px;
 }
 
-/* تنسيق أزرار السيرش */
 .c {
     display: flex;
     gap: 15px;
@@ -96,47 +108,52 @@ button:hover {
     flex: 1;
 }
 
-/* زر الحذف الكلي - درجة أحمر هادئة ومناسبة */
+
+
 #deleteaAll button {
     background: #854442; 
     width: 100%;
     margin: 20px 0;
 }
 
+
 #deleteaAll button:hover {
     background: #b94543;
 }
 
-/* تنسيق الجدول والخطوط */
+
 table {
     width: 100%;
     text-align: center;
     margin: 15px 0;
     border-collapse: collapse;
-    /* خلفية الجدول بلون متوسط */
     background: #352F44; 
 }
 
+
+
 table th, table td {
     padding: 12px;
-    /* الخطوط بلون الخلفية الأغمق لإعطاء مظهر محفور */
     border: 1px solid #2A2438; 
 }
 
+
+
 table th {
-    /* رأس الجدول بلون الباليتة المتوسط */
     background-color: #5C5470; 
     color: #DBD8E3;
     text-transform: uppercase;
 }
 
-/* تأثير التمرير على الصفوف */
+
+
 table tbody tr:hover {
     background-color: #433D50; 
     transition: 0.3s;
 }
 
-/* تمييز أزرار الجدول */
+
+
 table #update {
     background-color: #5C5470;
     border: 1px solid #DBD8E3;
@@ -150,19 +167,33 @@ table #delete {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 .watermark {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    opacity: 0.15; /* شفافية هادئة */
-    font-family: 'Dancing Script', cursive; /* خط توقيع مميز */
+    opacity: 0.15; 
+    font-family: 'Dancing Script', cursive;
     font-size: 35px;
-    color: #DBD8E3; /* نفس لون نصوص الباليتة الفاتح */
+    color: #DBD8E3; 
     pointer-events: none;
     z-index: 1000;
     user-select: none;
     transform: rotate(-10deg);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* ظل بسيط لإبراز الخط */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+
 }
